@@ -14116,7 +14116,7 @@ var About = function (_React$Component) {
           _react2.default.createElement(
             'h1',
             null,
-            'This is About page'
+            'This is React About page'
           )
         )
       );
@@ -14191,7 +14191,7 @@ var Home = function (_React$Component) {
           _react2.default.createElement(
             'h1',
             null,
-            'This is the home page'
+            'This is React home page'
           )
         )
       );

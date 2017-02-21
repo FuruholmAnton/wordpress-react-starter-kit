@@ -9,7 +9,7 @@ class About extends React.Component {
     return (
       <div>
         <div >
-          <h1>This is About page</h1>
+          <h1>This is React About page</h1>
           
         </div>
       </div>
