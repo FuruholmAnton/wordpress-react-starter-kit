@@ -1,13 +1,22 @@
 import React from 'react';
 import {} from './style.scss';
+import Header from './components/header/Header.js';
 
 export default class App extends React.Component {
+	
+	componentDidMount() {
+		console.log('App.js');
+	}
+	
   render() {
     return (
       <div>
-        <h1>It Works!</h1>
-        <p>This React project just works including <span className="redBg">module</span> local styles.</p>
-        <p>Enjoy!</p>
+      	<Header/>
+        <div className="container">
+					<div className="">
+						{this.props.children}
+					</div>
+				</div>
       </div>
     )
   }

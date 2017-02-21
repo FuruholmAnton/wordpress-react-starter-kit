@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1><?php the_title(); ?></h1>
-    <?php echo 'TEST' ?>
+    <?php echo 'This is rendered by PHP/Wordpress' ?>
     <div id="app"></div>
 
 
