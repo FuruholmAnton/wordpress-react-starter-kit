@@ -33,32 +33,22 @@ gulp.task('compress', function() {
 });
 
 gulp.task('webpack', function() {
-  return gulp.src('assets/js/main.js')
+  return gulp.src('../src/index.js')
     .pipe(webpack( require('./webpack.config.js') ))
-    .pipe(gulp.dest('assets/js/dist/'));
+    .pipe(gulp.dest('/'));
 });
 
 
 gulp.task('watch', function() {
-  gulp
-    // Watch the inputSass folder for change,
-    // and run `sass` task when something happens
-    .watch(inputSass, ['sass'])
-    // .watch('assets/js/imports', ['webpack'])
-    // When there is a change,
-    // log a message in the console
-    .on('change', function(event) {
-      console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
-    });
 
   gulp
-    .watch(['assets/js/imports/**/*', 'assets/js/main.js'], ['webpack'])
+    .watch(['../src/**/*'], ['webpack'])
     .on('change', function(event) {
       console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
     });
 });
 
-gulp.task('default', ['sass', 'webpack', 'watch' /*, possible other tasks... */]);
+gulp.task('default', ['webpack', 'watch' /*, possible other tasks... */]);
 
 gulp.task('prod', function () {
   return gulp

@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="src/app.js"></script>
+    <title>React WP</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <div id="mount-point"></div>
-    <script type="text/jsx">
-      // React Code Goes Here
-    </script>
+    <h1><?php the_title(); ?></h1>
+    <?php echo 'TEST' ?>
+    <div id="app"></div>
+
+
+    <script src="<?php echo get_template_directory_uri(); ?>/bundle.js"></script>
   </body>
 </html>
