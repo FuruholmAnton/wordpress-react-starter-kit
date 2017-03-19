@@ -14053,16 +14053,13 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createHashHistory = __webpack_require__(121);
+var _createBrowserHistory = __webpack_require__(238);
 
-var _createHashHistory2 = _interopRequireDefault(_createHashHistory);
+var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = (0, _createHashHistory2.default)({
-  // hide the hash key (e.g. "_k=123abc")
-  // queryKey: false
-});
+exports.default = (0, _createBrowserHistory2.default)({});
 
 /***/ }),
 /* 164 */

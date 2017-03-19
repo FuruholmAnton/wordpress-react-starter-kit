@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <h1><?php the_title(); ?></h1>
-    <?php echo 'This is rendered by PHP/Wordpress' ?>
+    
+
     <div id="app"></div>
 
 
